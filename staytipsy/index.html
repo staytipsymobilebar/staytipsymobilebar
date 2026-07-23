@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stay Tipsy Mobile Bar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#050505;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+}
+
+.logo h2{
+color:#FFD54F;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff4fd8;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:170px;
+border-radius:50%;
+box-shadow:0 0 30px #ff4fd8;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:70px;
+color:#FFD54F;
+text-shadow:0 0 20px gold;
+}
+
+.hero p{
+margin-top:15px;
+font-size:22px;
+max-width:700px;
+margin-inline:auto;
+}
+
+.buttons{
+margin-top:40px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+margin:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.gold{
+background:#FFD54F;
+color:black;
+}
+
+.gold:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px gold;
+}
+
+.pink{
+border:2px solid #ff4fd8;
+color:white;
+}
+
+.pink:hover{
+background:#ff4fd8;
+}
+
+section{
+padding:100px 8%;
+}
+
+h2{
+font-size:42px;
+text-align:center;
+margin-bottom:50px;
+color:#FFD54F;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:40px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px #3fd9ff;
+}
+
+.card h3{
+margin:20px 0;
+color:#FFD54F;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stat{
+background:#111;
+padding:40px;
+border-radius:20px;
+}
+
+.stat h1{
+font-size:60px;
+color:#ff4fd8;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#222;
+color:white;
+}
+
+button{
+padding:15px 35px;
+background:#FFD54F;
+border:none;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:40px;
+color:#999;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:45px;
+}
+
+.contact{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+<h2>Stay Tipsy</h2>
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Book</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<img src="logo.png">
+
+<h1>Stay Tipsy Mobile Bar</h1>
+
+<p>
+Premium Mobile Bar Services for Weddings, Birthdays,
+Corporate Events, Debuts & Private Parties.
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="btn gold">Book Now</a>
+
+<a href="#gallery" class="btn pink">View Gallery</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p style="max-width:900px;margin:auto;text-align:center;font-size:18px;line-height:2;">
+Stay Tipsy Mobile Bar delivers unforgettable beverage experiences.
+Our professional bartenders, stylish mobile bar, premium cocktails,
+and exceptional service make every celebration one to remember.
+Whether it's an intimate gathering or a grand wedding,
+we bring the party directly to you.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💍 Weddings</h3>
+<p>Elegant cocktail service for your special day.</p>
+</div>
+
+<div class="card">
+<h3>🎂 Birthdays</h3>
+<p>Celebrate with handcrafted drinks and amazing bartenders.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Corporate</h3>
+<p>Professional mobile bar setup for company events.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Private Events</h3>
+<p>Perfect for reunions, debuts, anniversaries and parties.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Our Numbers</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h1>200+</h1>
+<p>Events</p>
+</div>
+
+<div class="stat">
+<h1>5000+</h1>
+<p>Cocktails Served</p>
+</div>
+
+<div class="stat">
+<h1>100%</h1>
+<p>Customer Satisfaction</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800">
+
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800">
+
+<img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800">
+
+<img src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?auto=format&fit=crop&w=800">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Book Your Event</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Let's Celebrate!</h3>
+
+<br>
+
+<p>📱 Phone: +63921630277</p>
+
+<br>
+
+<p>📧 Email: staytipsymobilebar@email.com</p>
+
+<br>
+
+<p>📍 Serving Your Area</p>
+
+<br>
+
+<p>Facebook: Stay Tipsy Mobile Bar</p>
+
+<p>Instagram: @staytipsymobilebar</p>
+
+</div>
+
+<div>
+
+<input placeholder="Your Name">
+
+<input placeholder="Phone Number">
+
+<input placeholder="Email">
+
+<input placeholder="Event Date">
+
+<textarea rows="6" placeholder="Tell us about your event"></textarea>
+
+<button>Book Now</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="logo.png" width="90" style="border-radius:50%;margin-bottom:20px;">
+
+<p>© 2026 Stay Tipsy Mobile Bar</p>
+
+<p>Crafting unforgettable celebrations.</p>
+
+</footer>
+
+</body>
+</html>
